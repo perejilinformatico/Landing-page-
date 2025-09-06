@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+body {   
+    text-align: center;  
+    font-family: "DM Sans", sans-serif; 
+}
+* {
+    margin: 0;
+}
+header {
+    background-color: rgb(153, 253, 4);
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Edu NSW ACT Cursive", cursive;
+}
+#plantas {
+    padding: 100px;
+    display: block;
+    margin: 100px;
+    text-align: center;
+}
+#contactos {
+    padding: 100px;
+    margin: 100px;
+}
+.Plantas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 50px;
+}
+#planta1, #planta2, #planta3, #planta3 {
+    border: solid rgb(153, 253, 4) 5px;
+    height: 70px;
+    width: 100px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(153, 253, 4);
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    .Plantas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+#planta1:hover, #planta2:hover, #planta3:hover, #planta4:hover {
+     cursor: pointer;
+     animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes Animacion {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+main {
+    animation: Animacion 2s ease-in-out;
+}
+.Contactos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+a { 
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+footer {
+    padding: 10px;
+    margin: 10px;
+}
